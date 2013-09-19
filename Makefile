@@ -18,6 +18,8 @@ endif
 
 #--- Inputs ----#
 COMPONENT_NAME = PateCoin
+CPPUTEST_WARNINGFLAGS = -Wall
+
 
 CPPUTEST_USE_EXTENSIONS = Y
 CPP_PLATFORM = Gcc

@@ -11,7 +11,7 @@
 #include <string.h>
 #include <assert.h>
 
-#include <jansson.h>
+#include "jansson.h"
 #include "jansson_private.h"
 #include "strbuffer.h"
 #include "utf.h"
@@ -36,7 +36,7 @@ static int dump_to_strbuffer(const char *buffer, int size, void *data)
 static int dump_to_file(const char *buffer, int size, void *data)
 {
     FILE *dest = (FILE *)data;
-    if(fwrite(buffer, size, 1, dest) != 1)
+    if(fwrite(buffer, (size_t) size, 1, dest) != 1)
         return -1;
     return 0;
 }

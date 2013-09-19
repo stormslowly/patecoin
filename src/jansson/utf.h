@@ -8,7 +8,7 @@
 #ifndef UTF_H
 #define UTF_H
 
-#include <config.h>
+#include "config.h"
 
 #ifdef HAVE_INTTYPES_H
 /* inttypes.h includes stdint.h in a standard environment, so there's

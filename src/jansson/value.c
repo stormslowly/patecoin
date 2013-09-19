@@ -7,12 +7,12 @@
 
 #define _GNU_SOURCE
 
-#include <config.h>
+#include "config.h"
 
 #include <stdlib.h>
 #include <string.h>
 
-#include <jansson.h>
+#include "jansson.h"
 #include "hashtable.h"
 #include "jansson_private.h"
 #include "utf.h"
