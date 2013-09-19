@@ -14,8 +14,6 @@ ifndef SILENCE
 	# SILENCE = @
 endif
 
-
-
 #--- Inputs ----#
 COMPONENT_NAME = PateCoin
 CPPUTEST_WARNINGFLAGS = -Wall
@@ -37,6 +35,7 @@ TEST_SRC_DIRS = \
 
 INCLUDE_DIRS =\
   $(CPPUTEST_HOME)/include\
+  src
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
 

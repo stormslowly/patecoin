@@ -145,7 +145,10 @@ static void hashtable_do_clear(hashtable_t *hashtable)
         next = list->next;
         pair = list_to_pair(list);
         if(hashtable->free_key)
-            hashtable->free_key(pair->key);
+        {
+//        	hashtable->free_key(pair->key);
+        	free(pair->key);
+        }
         if(hashtable->free_value)
             hashtable->free_value(pair->value);
         free(pair);

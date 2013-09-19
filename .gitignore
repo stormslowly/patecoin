@@ -1,2 +1,5 @@
 lib
 objs
+.cproject
+.settings
+.project
